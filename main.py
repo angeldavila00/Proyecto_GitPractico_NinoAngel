@@ -15,6 +15,7 @@ while (booleanito):
     print("1.Registrar una empanada")
     print("2.Actualizar empanada")
     print("3.Eliminar empanada")
+    print("4.salir")
     opcion= int(input("Dime una opcion numerica: "))
     if (opcion==1):
         print("==================================")
@@ -56,16 +57,16 @@ while (booleanito):
         cantEmpanada=int(input("Cuantos ingredientes tiene: "))
         IngreTemporal=[]
         for i in range(cantEmpanada):
-            nombreingre=input("Dime los nombres de los ingredientes: ")
+            nombreIngre=input("Dime los nombres de los ingredientes: ")
             disponibilidad=int(input("Dime si esta disponible el producto en opcion numerica \n 1. si \n  2. no: "))
             if (disponibilidad==1):
                 diccionarioTemporal={
-                    "nombre":nombreingre,
+                    "nombre":nombreIngre,
                     "disponibilidad":"si"
                 }
             else:
                 diccionarioTemporal={
-                    "nombre":nombreingre,
+                    "nombre":nombreIngre,
                     "disponibilidad":"no"
                 }
             IngreTemporal.append(diccionarioTemporal)
@@ -90,3 +91,7 @@ while (booleanito):
             print("La empanada fue eliminada exitosamente")
         else:
             print("No fue eliminado el producto")
+    if(opcion==4):
+        print("===================================")
+        print("Gracias!! vuelve pronto")
+        booleanito=False

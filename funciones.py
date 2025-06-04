@@ -7,8 +7,6 @@ def recorrerIngredientes(menu,lugar):
         print("Ingrediente:",menu[lugar]["ingredientes"][i]["nombreIngre"])
         print("Disponibilidad:", menu[lugar]["ingredientes"][i]["disponibilidad"])
 
-
-
 def datos(menu,opcionId):
         print("===========================")
         print(" empanada numero", opcionId)
