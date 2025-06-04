@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "nommbre": "pollo",
+        "nombre": "pollo",
         "precio": 2000,
         "ingredientes": [
             {
@@ -12,11 +12,11 @@
     },
     {
         "id": 2,
-        "nombre": "carne",
-        "precio": 8000,
+        "nombre": "arroz",
+        "precio": 3456,
         "ingredientes": [
             {
-                "nombreIngre": "carne de cerdo",
+                "nombre": "arroz",
                 "disponibilidad": "si"
             }
         ]

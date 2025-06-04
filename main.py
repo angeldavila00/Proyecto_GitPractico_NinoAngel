@@ -50,4 +50,32 @@ while (booleanito):
         print("==================================")
         opcionId=int(input("Dime el numero de ID que quieres actualizar: "))
         datos(menu,opcionId)
-        
+        temporalDatos=menu[opcionId-1]
+        nombreTemporal=input("Dime el nombre que deseas: ")
+        precioTemporal=int(input("Dime el precio: "))
+        cantEmpanada=int(input("Cuantos ingredientes tiene: "))
+        IngreTemporal=[]
+        for i in range(cantEmpanada):
+            nombreingre=input("Dime los nombres de los ingredientes: ")
+            disponibilidad=int(input("Dime si esta disponible el producto en opcion numerica \n 1. si \n  2. no: "))
+            if (disponibilidad==1):
+                diccionarioTemporal={
+                    "nombre":nombreingre,
+                    "disponibilidad":"si"
+                }
+            else:
+                diccionarioTemporal={
+                    "nombre":nombreingre,
+                    "disponibilidad":"no"
+                }
+            IngreTemporal.append(diccionarioTemporal)
+            diccionarioAgregar={
+                "id": menu[opcionId-1]["id"],
+                "nombre": nombreTemporal,
+                "precio": precioTemporal,
+                "ingredientes":IngreTemporal
+            }
+            menu[opcionId-1]=diccionarioAgregar
+            guardarJSON(menu)
+
+
