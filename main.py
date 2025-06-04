@@ -48,6 +48,6 @@ while (booleanito):
         print("==================================")
         print("Actualizar empanadas")
         print("==================================")
-
         opcionId=int(input("Dime el numero de ID que quieres actualizar: "))
+        datos(menu,opcionId)
         
