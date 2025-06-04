@@ -37,4 +37,6 @@ while (booleanito):
                 "nombreIngre":nombreIngre,
                 "disponibilidad":disponible
             }
-            
+            diccionarioNuevo["ingredientes"].append(dateingredientes)
+            menu.append(diccionarioNuevo)
+            guardarJSON(menu)
