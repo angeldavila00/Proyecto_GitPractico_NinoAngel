@@ -77,5 +77,8 @@ while (booleanito):
             }
             menu[opcionId-1]=diccionarioAgregar
             guardarJSON(menu)
-
-
+    if(opcion==3):
+        print("==================================")
+        print("Eliminar empanada")
+        print("==================================")
+        opcionId=int(input("Dime el numero de ID que quieres eliminar: "))
