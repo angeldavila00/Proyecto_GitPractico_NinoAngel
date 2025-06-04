@@ -17,6 +17,9 @@ while (booleanito):
     print("3.Eliminar empanada")
     opcion= int(input("Dime una opcion numerica: "))
     if (opcion==1):
+        print("==================================")
+        print("Registrar una empanada")
+        print("==================================")
         nombre=input("Dime el nombre de la empanada: ")
         precio=int(input("Dime el precio de la empanada: "))
         cantEmpanada=int(input("Dime la cantidad de ingredientes de la empanada: "))
@@ -40,3 +43,11 @@ while (booleanito):
             diccionarioNuevo["ingredientes"].append(dateingredientes)
             menu.append(diccionarioNuevo)
             guardarJSON(menu)
+
+    if (opcion==2):
+        print("==================================")
+        print("Actualizar empanadas")
+        print("==================================")
+
+        opcionId=int(input("Dime el numero de ID que quieres actualizar: "))
+        

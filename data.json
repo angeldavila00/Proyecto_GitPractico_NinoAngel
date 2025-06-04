@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "nommbre": "pollo",
+        "precio": 2000,
+        "ingredientes": [
+            {
+                "nombreIngre": "pollo",
+                "disponibilidad": "si"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "carne",
+        "precio": 8000,
+        "ingredientes": [
+            {
+                "nombreIngre": "carne de cerdo",
+                "disponibilidad": "si"
+            }
+        ]
+    }
+]
