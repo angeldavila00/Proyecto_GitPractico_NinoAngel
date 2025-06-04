@@ -82,3 +82,11 @@ while (booleanito):
         print("Eliminar empanada")
         print("==================================")
         opcionId=int(input("Dime el numero de ID que quieres eliminar: "))
+        datos(menu,opcionId)
+        confirmar=int(input(f"Seguro deseas eliminar esta empanada con este mumero de {id}: 1.Si o 2. No \n Dime una opcion numerica:  "))
+        if(confirmar==1):
+            menu.pop(opcionId-1)
+            guardarJSON(menu)
+            print("La empanada fue eliminada exitosamente")
+        else:
+            print("No fue eliminado el producto")
